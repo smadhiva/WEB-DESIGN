@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="images/logo.jpg" width="200" height="200" alt="Cryptex logo">
+        Crypto-Pulse
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#container-infinte-scroll" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="dropdown">
+        <button id="prof" class="btn btn-outline dropbtn"></button>
+        <div class="dropdown-content">
+          <a href="#">Username</a>
+          <a href="#">Change Password</a>
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <section id="bannerbg" class="section hero" aria-label="hero" data-section>
+
+        <div class="container">
+
+          <div id="bannertxt" class="hero-content">
+            <br><br>
+
+            <h1 class="h1 hero-title">Money for the Digital Age</h1>
+            <br><br>
+
+            <center>
+              <p class="hero-text">
+                Be ahead of the curve, embrace the future of Trading today.
+                <br><br>
+                <a href="index1.html" class="btn btn-primary">Get started now</a>
+              </p>
+            </center>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section trend" aria-label="crypto trend" data-section>
+        <div class="container">
+
+          <div class="trend-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Top-Shares</button>
+              </li>
+
+            </ul>
+
+            <ul class="tab-content">
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-1.svg" width="100" height="50" alt="bitcoin logo">
+
+                    <a href="index1.html" class="card-title" style="font-size: 30px;">
+                      Bitcoin <span class="span" style="font-size: 20px;">BTC/USD</span>
+                    </a>
+                  </div>
+
+                  <div class="card-analytics" style="margin-top: 20px;">
+                    <data class="current-price" value="36641.20">Currect-Price : 36,641.20</data>
+                    <div class="badge red">-0.79%</div>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="trend-card active">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-2.svg" width="100" height="50" alt="ethereum logo">
+
+                    <a href="index1.html" class="card-title" style="font-size: 30px;">
+                      Ethereum <span class="span" style="font-size: 20px;">ETH/USD</span>
+                    </a>
+                  </div>
+                  <div class="card-analytics" style="margin-top: 20px;">
+                    <data class="current-price" value="36641.20">Currect-Price : 36,641.20</data>
+                    <div class="badge green">+10.55%</div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-3.svg" width="100" height="50" alt="tether logo">
+
+                    <a href="index1.html" class="card-title" style="font-size: 30px;"> Tether
+                      <span class="span" style="font-size: 20px;"> USDT/USD</span>
+                    </a>
+                  </div>
+                  <div class="card-analytics" style="margin-top: 20px;">
+                    <data class="current-price" value="36641.20">Currect-Price : 36,641.20</data>
+
+                    <div class="badge red">-0.01%</div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-4.svg" width="100" height="50" alt="bnb logo">
+
+                    <a href="index1.html" class="card-title" style="font-size: 30px;">
+                      BNB <span class="span" style="font-size: 20px;">BNB/USD</span>
+                    </a>
+                  </div>
+                  <div class="card-analytics" style="margin-top: 20px;">
+                    <data class="current-price" value="36641.20">Currect-Price :36,641.20</data>
+
+                    <div class="badge red">-1.24%</div>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="section market" aria-label="market update" data-section>
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Market Update</h2>
+            <a href="index1.html" class="btn-link">See All Coins</a>
+          </div>
+          <div class="market-tab">
+            <table class="market-table">
+              <thead class="table-head">
+                <tr class="table-row table-title">
+                  <th></th>
+                  
+                  <th class="table-heading" scope="col">Coins</th>
+                  <th class="table-heading" scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr class="table-row">
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <div class="instruction-card">
+                        <figure class="card-banner">
+                          <img src="./assets/images/coin-1.svg" width="96" height="96" loading="lazy" alt="Step 1"
+                            class="img">
+                        </figure>
+                      </div>
+                      <h3>
+                        <a href="index1.html" class="coin-name">Bitcoin <span class="span">BTC</span></a>
+                      </h3>
+                    </div>
+                  </td>
+                  <td class="table-data last-price">$56,623.54</td>
+                <tr class="table-row">
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <div class="instruction-card">
+                        <figure class="card-banner">
+                          <img src="./assets/images/coin-2.svg" width="96" height="96" loading="lazy" alt="Step 1"
+                            class="img">
+                        </figure>
+                      </div>
+                      <h3>
+                        <a href="index1.html" class="coin-name">Ethereum <span class="span">ETH</span></a>
+                      </h3>
+                    </div>
+                  </td>
+                  <td class="table-data last-price">$3,942.23</td>
+                </tr>
+
+                <tr class="table-row">
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <div class="instruction-card">
+                        <figure class="card-banner">
+                          <img src="./assets/images/coin-3.svg" width="96" height="96" loading="lazy" alt="Step 1"
+                            class="img">
+                        </figure>
+                      </div>
+                      <h3>
+                        <a href="index1.html" class="coin-name">Tether <span class="span">USDT/USD</span></a>
+                      </h3>
+                    </div>
+                  </td>
+                  <td class="table-data last-price">$1.00</td>
+                <tr class="table-row">
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <div class="instruction-card">
+                        <figure class="card-banner">
+                          <img src="./assets/images/coin-4.svg" width="96" height="96" loading="lazy" alt="Step 1"
+                            class="img">
+                        </figure>
+                      </div>
+                      <h3>
+                        <a href="index1.html" class="coin-name">BNB <span class="span">BNB/USD</span></a>
+                      </h3>
+                    </div>
+                  </td>
+                  <td class="table-data last-price">$408.54</td>
+                </tr>
+
+                <tr class="table-row">
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <div class="instruction-card">
+                        <figure class="card-banner">
+                          <img src="./assets/images/coin-5.svg" width="96" height="96" loading="lazy" alt="Step 1"
+                            class="img">
+                        </figure>
+                      </div>
+                      <h3>
+                        <a href="index1.html" class="coin-name">Solana <span class="span">SOL</span></a>
+                      </h3>
+                    </div>
+                  </td>
+                  <td class="table-data last-price">$156.23</td>
+                </tr>
+                <tr>
+                <tr class="table-row">
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <div class="instruction-card">
+                        <figure class="card-banner">
+                          <img src="./assets/images/coin-6.svg" width="96" height="96" loading="lazy" alt="Step 1"
+                            class="img">
+                        </figure>
+                      </div>
+                      <h3>
+                        <a href="index1.html" class="coin-name">XRP <span class="span">XRP</span></a>
+                      </h3>
+                    </div>
+                  </td>
+                  <td class="table-data last-price">$1.00</td>
+                </tr>
+
+                <tr class="table-row">
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <figure class="card-banner">
+                        <div class="instruction-card">
+                          <figure class="card-banner">
+                            <img src="./assets/images/coin-7.svg" width="96" height="96" loading="lazy" alt="Step 1"
+                              class="img">
+                          </figure>
+                        </div>
+                      </figure>
+                      <h3>
+                        <a href="index1.html" class="coin-name">Cardano <span class="span">ADA</span></a>
+                      </h3>
+                    </div>
+                  </td>
+                  <td class="table-data last-price">$1.56</td>
+                <tr class="table-row">
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <div class="instruction-card">
+                        <figure class="card-banner">
+                          <img src="./assets/images/coin-8.svg" width="96" height="96" loading="lazy" alt="Step 1"
+                            class="img">
+                        </figure>
+                      </div>
+                      <a href="index1.html" class="coin-name">Avalanche <span class="span">AVAX</span></a>
+                      </h3>
+                    </div>
+                  </td>
+                  <td class="table-data last-price">$56.23</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+
+      <div id="container-infinte-scroll" class="Blog-text" style="margin-top: 40px;">
+        <h1 style="font-size: 30px; text-align: center; ">THE NEWS ON THE CRYPTO-TREND</h1>
+        <a href="blog.html"> <button class="view-blog">View Our New Blog Website</button></a>
+
+      </div>
+    
+      <section id="container-infinte-scroll" class=" container container-infinte-scroll">
+        <div class="Blog-text">
+          <h1 style="font-size: 30px; margin-top: 50px; ">Learn Trading</h1>
+        </div>
+        <div>
+          <div class="scroll scroll1">
+            <div class="content1">
+              <image class="content" href="blog.html"
+                src="https://d2tpnh780x5es.cloudfront.net/rebrand-prod/zhpl1vqx/forex-trading-guide.png">
+              </image>
+            </div>
+            <div class="content1">
+              <image class="content" href="blog.html"
+                src="https://d2tpnh780x5es.cloudfront.net/rebrand-prod/uoxdkvas/forex-trading-strategies-banner.png">
+              </image>
+            </div>
+            <div class="content1">
+              <image class="content" href="blog.html"
+                src="https://d2tpnh780x5es.cloudfront.net/rebrand-prod/idkh45i1/how-to-read-forex-charts-banner.jpg">
+              </image>
+            </div>
+            <div class="content1">
+              <image class="content" href="blog.html"
+                src="https://www.dominionmarkets.com/blog/images/introduction-to-ctrader-and-metatrader-5-significance-in-trading-platforms.png">
+              </image>
+            </div>
+            <div class="content1">
+              <image class="content" href="blog.html"
+                src="https://www.dominionmarkets.com/blog/images/why-dominion-markets-is-the-best-forex-broker-for-you.png">
+              </image>
+            </div>
+            <div class="content1">
+              <image class="content" href="blog.html"
+                src="https://www.dominionmarkets.com/blog/images/top-5-most-traded-currencies-in-forex.png">
+              </image>
+            </div>
+          </div>
+
+          <div class="Blog-text">
+            <h1 style="font-size: 30px; margin-top: 50px; ">Tamil News</h1>
+          </div>
+          <div>
+            <div class="scroll scroll2">
+              <div class="content1">
+                <image class="content" href="blog.html"
+                  src="https://i.ytimg.com/vi/eG6jacSzjvc/maxresdefault.jpg">
+                </image>
+              </div>
+              <div class="content1">
+                <image class="content" href="blog.html"
+                  src="https://i.ytimg.com/vi/O3uglnZr8J8/maxresdefault.jpg">
+                </image>
+              </div>
+              <div class="content1">
+                <image class="content" href="blog.html"
+                  src="https://i.ytimg.com/vi/3AmBOBAqvfM/maxresdefault.jpg">
+                </image>
+              </div>
+              <div class="content1">
+                <image class="content" href="blog.html"
+                  src="https://i.ytimg.com/vi/mR20qR2w7PE/maxresdefault.jpg">
+                </image>
+              </div>
+              <div class="content1">
+                <image class="content" href="blog.html"
+                  src="https://i.ytimg.com/vi/P0WNDzwg8Vs/sddefault.jpg">
+                </image>
+              </div>
+              <div class="content1">
+                <image class="content" href="blog.html"
+                  src="https://i.ytimg.com/vi/k4TGiptr-mI/hqdefault.jpg">
+                </image>
+              </div>
+            </div>
+
+            <div class="Blog-text">
+              <h1 style="font-size: 30px; margin-top: 50px; ">World News</h1>
+            </div>
+            <div>
+              <div class="scroll scroll3">
+                <div class="content1">
+                  <image class="content" href="blog.html"
+                    src="https://i.ytimg.com/vi/ApeI0UhP_X8/maxresdefault.jpg">
+                  </image>
+                </div>
+                <div class="content1">
+                  <image class="content" href="blog.html"
+                    src="https://i.ytimg.com/vi/agKUvLIKNQ8/maxresdefault.jpg">
+                  </image>
+                </div>
+                <div class="content1">
+                  <image class="content" href="blog.html"
+                    src="https://ia802708.us.archive.org/17/items/BBCNEWS_20230624_143000_President_Zelensky_talks_to_Yalda_Hakim/BBCNEWS_20230624_143000_President_Zelensky_talks_to_Yalda_Hakim.thumbs/BBCNEWS_20230624_143000_President_Zelensky_talks_to_Yalda_Hakim_001618.jpg">
+                  </image>
+                </div>
+                <div class="content1">
+                  <image class="content" href="blog.html"
+                    src="https://ichef.bbci.co.uk/news/976/cpsprodpb/6965/production/_105218962_32781167-943d-4ae0-bd89-0ec3bba8cb4f.jpg">
+                  </image>
+                </div>
+                <div class="content1">
+                  <image class="content" href="blog.html"
+                    src="https://cointracking.info/wp-content/uploads/2023/01/Bildschirm%C2%ADfoto-2023-09-18-um-16.01.04-1024x512.png">
+                  </image>
+                </div>
+                <div class="content1">
+                  <image class="content" href="blog.html"
+                    src="https://ichef.bbci.co.uk/news/976/cpsprodpb/2813/production/_118495201_fakebbcwebsite1.png">
+                  </image>
+                </div>
+              </div>
+              
+
+      </section>
+       <a href="faq.html"><button class="view-blog" id="faq" >FAQ's </button></a> 
+  </main>
+  <footer class="footer">
+    <div class="footer-top" data-section>
+      <div class="container">
+        <div id="foot-det">
+          <h2 class="footer-title">OUR SELF</h2>
+          <p class="footer-contact-link">S.MATHIVANAN <br>CB.SC.U4AIE23042</p>
+          <p class="footer-contact-link">ROSHAN T <br>CB.SC.U4AIE23058</p>
+          <address class="footer-contact-link">
+            CSE(AI)-BATCH "A"<br>
+            AMRITA VISHWA VIDHYAPEETHAM.<br>
+            COIMBATORE.
+          </address>
+        </div>
+        <div id="logo-foot">Crypto-Pluse</div>
+        <div id="changephoto"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+   
+      <div class="container">
+        <p>  </p>
+        <p class="copyright">
+          &copy;2024 UID PROJECT TEAM-14   
+        </p>
+     
+        <ul class="social-list">
+          <li>
+            <p>
+              Contact us -
+            </p>
+          </li>
+          <li>
+            <a href="tel:9944772353">
+              <box-icon name='phone-call' type='solid' animation='tada' color='#ffffff' ></box-icon>           </a>
+          </li>
+          <li>
+            <a href="mailto:thiruroshan27@gmail.com" >
+              <box-icon name='gmail' type='logo' animation='flashing' color='#ffffff' ></box-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/roshantwinn09/" >
+              <box-icon name='linkedin' type='logo' color='#ffffff' ></box-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+   
+    </div>
+  </footer>
+
+
+  <script src="script.js" defer></script>
+ 
+ 
+
+  <script>
+
+    var changevar = document.getElementById('changephoto');
+    function change() {
+      var i = 1;
+      var intervalId = setInterval(function () {
+        var html = `<img src="./assets/images/coin-${i}.svg" width="200" height="200">`;
+        changevar.innerHTML = html;
+        i++;
+        if (i > 8) {
+          i = 1;
+        }
+      }, 2000);
+    }
+    window.onload = change;
+  </script>
+</body>
+
+</html>

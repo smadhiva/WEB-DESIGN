@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto-Pulse Portfolio</title>
+    <link rel="stylesheet" href="tradingpage.css">
+</head>
+<body>
+<nav>
+    <h1>Crypto-Pulse Portfolio</h1>
+    <div id="userProfile">
+        <img src="images/logo.jpg" alt="Profile Photo" width="200px">
+        <h2 id="userName">User Name</h2>
+    </div>
+    <a href="index1.html">
+    <button  class="logout">Logout</button>
+  </a>
+</nav>
+<br>
+<div id="portfolioContainer">
+    <button class=" showportfolio"id="togglePortfolioBtn">Show Portfolio</button>
+   
+    <div id="portfolio" class="hidden">
+      <button id="button" onclick="closeDetails()"><img class="close"src="images/delete.png" ></button>
+        <h2>Your Portfolio</h2>
+        <table id="portfolioTable">
+            <thead>
+                <tr>
+                    <th>Cryptocurrency</th>
+                    <th>Quantity</th>
+                    <th>Current Price</th>
+                    <th>Total Value</th>
+                    <th>Profit/Loss</th>
+                </tr>
+            </thead>
+            <tbody >
+              
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="complete">
+<div class="left-div">
+<div class="profit-container">
+    <div class="total-inversted">
+        <p>Total Inversted</p>
+        <p id="total-inversted-value">0</p>
+    </div>
+    <div class="Current-Amount">
+        <p>Current Amount:</p>
+        <p id="Current-Amount-value">0</p>
+    </div>
+    <div class="Current-Gain">
+        <p>Current Gain:</p>
+        <p id="Current-Gain-value">0</p>
+    </div>  
+</div>
+<div class="container">          
+    <div id="transaction">
+        <h2>Buy/Sell Cryptocurrency</h2>
+        <form id="transactionForm">
+            <label for="cryptoName">Cryptocurrency:</label>
+            <select id="cryptoName" required>
+                <option value="Bitcoin">Bitcoin</option>
+                <option value="Ethereum">Ethereum</option>
+                <option value="Ripple">Ripple</option>
+                <option value="Thether">Thether</option>
+                <option value="BNB">BNB</option>
+                <option value="Solana">Solana</option>
+                <option value="XRP">XRP</option>
+                <option value="Cardano">Cardano</option>
+                <option value="Avalanche">Avalanche</option>
+                
+                
+            </select>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" step="1" min="0" required>
+            
+            <label for="transactionType">Transaction Type:</label>
+        
+           <select id="transactionType">
+                <option value="buy">Buy</option>
+                <option value="sell">Sell</option>
+            </select>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+</div>
+
+<div class="market">
+    <section class="section"  data-section>
+            <table class="market-table">
+              <thead class="table-head">
+                <tr class="table-row table-title">
+                  <th class="table-heading" scope="col">Coins</th>
+                  <th class="table-heading" scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr class="table-row">                  
+                    <td class="table-data">Bitcoin                
+                    </td>
+                    <td class="table-data last-price">$40000</td>
+                  </tr>
+                  <tr class="table-row">                  
+                    <td class="table-data">Avalanche                
+                    </td>
+                    <td class="table-data last-price">$30</td>
+                  </tr>
+                  <tr class="table-row">                  
+                    <td class="table-data">Ripple            
+                    </td>
+                    <td class="table-data last-price">$0.5</td>
+                  </tr>
+                  <tr class="table-row">                  
+                    <td class="table-data"> Thether              
+                    </td>
+                    <td class="table-data last-price">$1</td>
+                  </tr>
+                  <tr class="table-row">                  
+                    <td class="tabl e-data"> BNB              
+                    </td>
+                    <td class="table-data last-price">$300</td>
+                  </tr>
+                  <tr class="table-row">                  
+                    <td class="table-data"> Solana            
+                    </td>
+                    <td class="table-data last-price">$35</td>
+                  </tr>
+                  <tr class="table-row">                  
+                    <td class="table-data">XRP               
+                    </td>
+                    <td class="table-data last-price">$0.5</td>
+                  </tr>
+                  <tr class="table-row">                  
+                    <td class="table-data">Cardano               
+                    </td>
+                    <td class="table-data last-price">$1.5</td>
+                  </tr>
+                  <tr class="table-row">                  
+                    <td class="table-data">Ethereum                
+                    </td>
+                    <td class="table-data last-price">$2500</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+</div>
+
+
+
+
+</div>
+<div class="blur-background"></div>
+    <script src="tradingpage.js"></script>
+</body>
+</html>

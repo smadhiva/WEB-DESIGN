@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support and Help</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header, footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        header a{
+            float: right;
+            margin-right: 30px;
+        }
+        header h1 {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2em;
+            margin: 1em;
+            border: 1px solid goldenrod;
+            background-color: #222;
+            color: #fff;
+        }
+
+        h1, h2, h3 {
+            color: #fff;
+        }
+
+        #faq-categories .category {
+            margin-bottom: 1em;
+        }
+
+        #contact-form form, #post-question form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact-form label, #post-question label {
+            color: #fff;
+            margin: 0.5em 0;
+        }
+
+        #contact-form input, #post-question input, #contact-form textarea, #post-question textarea, #contact-form button, #post-question button {
+            margin: 0.5em 0;
+            color: #000;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-form button, #post-question button {
+            background-color: #b39e9e;
+            color: black;
+            font-size: 15px;
+            font-weight: 600;
+            width:150px;
+            margin: 10px 0px;
+        }
+
+        #contact-form button:hover, #post-question button:hover {
+            background-color: #ffd700; 
+        }
+
+        #live-chat {
+            margin-top: 2em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Support and Help</h1>
+        <a href="index.html"><div style="color: white;">Back to home</div> </a>
+    </header>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+       
+        <div id="faq-categories">
+            <div class="category">
+                <h3>Account Management</h3>
+                <p><strong>Q: How do I reset my password?</strong></p>
+                <p>A: Go to the login page, click on 'Forgot Password', and follow the instructions sent to your registered email.</p>
+            </div>
+            <div class="category">
+                <h3>Trading</h3>
+                <p><strong>Q: How do I place a trade?</strong></p>
+                <p>A: Navigate to the Trading Page, select the cryptocurrency you wish to trade, enter the amount, and click 'Buy' or 'Sell'.</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="post-question">
+        <h2>Post a Question</h2>
+        <form onsubmit="submitQuestion(event)">
+            <label for="user-question">Question:</label>
+            <input type="text" id="user-question" name="user-question" required>
+
+          
+
+          <center> <button type="submit">Post Question</button></center> 
+        </form>
+    </section>
+
+    <section id="customer-support">
+        <h2>Customer Support</h2>
+        <div id="contact-form">
+            <h3>Contact Us</h3>
+            <form action="submit_support_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+             <center> <button type="submit">Submit</button></center>  
+            </form>
+            <p>Thank you for contacting us. We will get back to you within 24 hours.</p>
+        </div>
+        <div id="live-chat">
+            <h3>Live Chat</h3>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAblJREFUSEvtlj1IHUEUhb9TayFYWARFEQtLCxEbsdLGUmwFf/AHbRQUbKJgY6FNEhS1trGwEtTGwkYlkCKgYCCgdiIKIoQE4boDuzLvZZPnPnd9CE61M7N7vrlndu5cUaKmEnHJAZtZGdAN1KW8oJ/AjqSrSPcJbGYVwFegPmVoJPcHqJR07wZ88CjwJSNoJNsjaTMfPAt8zBg8J8lxciJ+B2fh+tuxehuYAb4DrcBnoCm05BswBhwFx7ELmA7fiXMsUcS3wAdJvyIlMxsGlsP+iKQVb64GOP/HPiUCH0tq8YXMrCOIajcc65S0lzd/AjTGwBOBb4LoqiQ9eFFNAIthf1LSkjdXGVh/nUbETuNTYPcacAm0hX1nqWsXwDhwADQAg8BAWuC0jlYiq9OCOp13MJhZyS4JPymkua++1pCk1fxr0VUgLv3VZkQ9A5ol3eWAXcfMyoEeIDqjbtgtpPc/i9kAfhRYrKu5Nv20W7DKNLN2YD9G2MH6JbnEkbgVA3ZF2wIwL8k9F9WSgg+DFNkn6bQomvfRc8FbwBSwLsleCv3r54oTNLNq4LdfjL8KOA1InEZBq7MCPwIbrLkflNuX7QAAAABJRU5ErkJggg=="/>
+            <p>Chat with us for real-time assistance. Support hours: 9 AM - 6 PM (Mon-Fri).</p> 
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CRYPTO-PULSE</p>
+    </footer>
+    <script>
+        function addFAQ(question, answer) {
+            const faqCategories = document.getElementById('faq-categories');
+            const newCategory = document.createElement('div');
+            newCategory.className = 'category';
+            newCategory.innerHTML = `<h3>User Submitted Questions</h3>
+                <p><strong>Q: ${question}</strong></p>`;
+            faqCategories.appendChild(newCategory);
+        }
+
+        function submitQuestion(event) {
+            event.preventDefault();
+            const question = document.getElementById('user-question').value;
+            addFAQ(question);
+        }
+    </script>
+</body>
+</html>
