@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="images/bg1-vmake.mp4" type="video/mp4">
+        
+    </video>
+ <div class="wrapper">
+    
+    <div>    
+    <div class="form-box">
+         
+
+        <div class="login-container" id="login">
+          
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input id="email1" type="text" class="input-field" placeholder="Username or Email" required >
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input id="pass1" type="password" class="input-field" placeholder="Password" required>
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input onclick="checkdata()" type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" id="fname" class="input-field" placeholder="Firstname"  required>
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="lname" class="input-field" placeholder="Lastname" required>
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" id="email" class="input-field" placeholder="Email" required>
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="pass" class="input-field" placeholder="Password" required>
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register"  onclick="savedata()">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

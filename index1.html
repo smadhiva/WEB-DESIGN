@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Crypto-Pulse</title>
+    <link rel="stylesheet" href="styles1.css">
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="navbar">
+            <div class="logo">
+                <img src="images/logo.jpg" width="350px" height="100px" alt="">
+                <h1>Crypto-Pulse</h1></div>
+                
+            <div class="tabs">
+            <a href="tradinglogin.html">
+            <div class="tradenow" >
+                <button class="tradenow button"> Trade Now !</button>
+            </div>         
+        </a>
+        <a href="index.html">
+            <button  class="logout">Logout</button>
+          </a>
+        </div>
+        
+        </header>   
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Coins</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Total Volume</th>
+                    <th>Market Cap Change</th>
+                    <th>View Chart</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td><img src="./assets/images/coin-1.svg" alt="BTC" class="icon"> </td>
+                    <td>Bitcoin</td>
+                    <td>$19,219.12</td>
+                    <td>24,211,591,836</td>
+                    <td class="negative">-1.68%</td>
+                    <td><button class="view-chart button"  onclick="showDetails('bitcoin')">Click Here</button></td>
+                </tr>
+                <tr></tr>
+                <tr onclick="showDetails('ethereum')">
+                    <td><img src="./assets/images/coin-2.svg" alt="ETH" class="icon"> </td>
+                    <td>Ethereum</td>
+                    <td>$1,303.94</td>
+                    <td>8,955,889,680</td>
+                    <td class="negative">-1.49%</td>
+                    <td><button class="view-chart button"  onclick="showDetails('bitcoin')">Click Here</button></td>
+                </tr>
+                <tr onclick="showDetails('tether')">
+                    <td><img src="/assets/images/coin-3.svg" alt="ETH" class="icon"></td>
+                    <td>Tether</td>
+                    <td>$1,303.94</td>
+                    <td>8,955,889,680</td>
+                    <td class="negative">-1.49%</td>
+                    <td><button class="view-chart button"  onclick="showDetails('bitcoin')">Click Here</button></td>
+                </tr>
+                <tr onclick="showDetails('bnb')">
+                    <td><img src="./assets/images/coin-4.svg" alt="ETH" class="icon"> </td>
+                    <td>BNB</td>
+                    <td>$1,303.94</td>
+                    <td>8,955,889,680</td>           
+                    <td class="positive">1.88%</td>
+                    <td><button class="view-chart button"  onclick="showDetails('bitcoin')">Click Here</button></td>
+                </tr>
+                <tr onclick="showDetails('solana')">
+                    <td><img src="./assets/images/coin-5.svg" alt="ETH" class="icon"> </td>
+                    <td>Solana</td>
+                    <td>$1,303.94</td>
+                    <td>8,955,889,680</td>
+                    <td class="positive">1.88%</td>
+                    <td><button class="view-chart button"  onclick="showDetails('bitcoin')">Click Here</button></td>
+                </tr>
+                <tr onclick="showDetails('xrp')">
+                    <td><img src="./assets/images/coin-6.svg" alt="ETH" class="icon"> </td>
+                    <td>XRP</td>
+                    <td>$1,303.94</td>
+                    <td>8,955,889,680</td>
+                    <td class="negative">-1.49%</td>
+                    <td><button class="view-chart button"  onclick="showDetails('bitcoin')">Click Here</button></td>
+                </tr>
+                <tr onclick="showDetails('cardano')">
+                    <td><img src="./assets/images/coin-7.svg" alt="ETH" class="icon"> </td>
+                    <td>Cardano</td>
+                    <td>$1,303.94</td>
+                    <td>8,955,889,680</td>
+                    <td class="negative">-1.49%</td>
+                    <td><button class="view-chart button"  onclick="showDetails('bitcoin')">Click Here</button></td>
+                </tr>
+                <tr onclick="showDetails('avalanche')">
+                    <td><img src="./assets/images/coin-8.svg" alt="ETH" class="icon"> </td>
+                    <td>Avalanche</td>
+                    <td>$1,303.94</td>
+                    <td>8,955,889,680</td>
+                    <td class="negative">-1.49%</td>
+                    <td><button class="view-chart button"  onclick="showDetails('bitcoin')">Click Here</button></td>
+                </tr>
+              
+            </tbody>
+        </table>
+        
+    </div>
+    <div class="details-box" id="detailsBox">
+        <button id="button" onclick="closeDetails()"><img class="close"src="images/delete.png" ></button>
+        <div id="grpbg">
+            <div id="grpdiv"></div>
+        </div>
+        <div id="detailsContent"></div>
+
+    </div>
+    <div class="blur-background"></div>
+   
+    <script src="script1.js"></script>
+</body>
+</html>
